@@ -1,0 +1,32 @@
+/* Reset/Global CSS declarations to get rid of browser default */
+
+/* get rid of white space around the entire page 
+caused by browser default*/
+
+html, body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* when you float items inside a parent, you will need a clearfix
+on the container element to ensure that it wraps around all floated 
+items */
+.clearfix::after {
+    display: block;
+    clear: both; /* clear both left and right */
+    /* ensure cross browser compatability */
+    height: 0;
+    font-size: 0;
+    content: '';
+    /* super paranoid mode */
+    visibility: hidden;
+}
+
+div, header, section, article, aside, footer, main {
+    min-height: 100px;
+    /* RGBA */
+    background-color: rgba(0, 100, 255, 0.2);
+}
