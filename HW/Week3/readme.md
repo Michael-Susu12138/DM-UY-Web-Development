@@ -1,1 +1,0 @@
-this folder contains hw for week3
