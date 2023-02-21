@@ -1,0 +1,116 @@
+/* Layout 1 Pixels only */
+
+/* css specificity 
+tag=1
+class=10
+id=100
+
+li a = 2
+ul li.someclass = 11
+div #veryImportant = 101 
+
+
+*/
+
+
+/* Nav Bar Styles */
+header {
+    width: 80%;
+    padding: 0 10%;
+    height: 50px;
+    position: fixed;
+    margin-bottom: 10px;
+    z-index: 10;
+    background-color: grey;
+  }
+  nav {
+    /* this is a no no workaround we will fix it with a box */
+    float: right;
+    display: inline-block;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: -50px;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(40, 40, 40, 0.1);
+  }
+  
+  nav li {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    width: 120px;
+    display: inline-block;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    /* transitions */
+    transition: all 1s;
+  }
+  
+  nav a:hover {
+    background-color: rgba(40, 40, 40, 0.5);
+    color: white;
+  }
+  
+
+
+
+main{
+    /* width:960px; */
+    /* first number is top/bottom second is left/right */
+    margin: 0;
+    margin-right: 10px;
+}
+.main-content{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.body-content{
+    width: 600px;
+    height: 600px;
+    margin-left: 10%;
+    background-color: aqua;
+    text-align: center;
+    font-size: large;
+}
+.body-content h2 {
+    margin-top: 40%;
+}
+
+.self-portrait {
+    width: 300px;
+    height: 300px;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-left: 10%;
+    background-color: lightyellow;
+    text-align: center;
+    font-size: large;
+}
+
+
+li a {
+    font-size: 18px;
+    color: purple;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+li a:hover {
+    background-color: rgba(0, 100, 255, 0.7);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+}
