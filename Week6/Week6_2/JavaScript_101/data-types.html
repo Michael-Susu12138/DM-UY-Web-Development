@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Data Types</title>
+    <script type="text/javascript">
+        // // declare a variable
+        // var myVar;
+        // // assign a value
+        // myVar = "number";
+        // or we can do this with one line
+        var myVar = "number";
+        console.log(myVar);
+        console.log(typeof myVar);
+
+        //reassign a number/integer to myVar
+        myVar = "8";
+        console.log(myVar);
+        console.log(typeof myVar);
+
+        //even though 8 is a string quote, we can still do math
+        myVar2 = myVar * 2;
+        console.log(myVar2);
+
+        // variable and strings mixed
+        var temp = 72
+        console.log('Today temperature is ' + temp + " degrees F")
+
+        // sums and parameters and onclick
+        // declare and write our function
+        function sumVals(a, b){
+            var sum = a + b
+            alert(sum)
+        }
+
+        var isOn = true
+        function switchOnOff(){
+            // == is week comparison, === checks for the type
+            if(isOn === true){
+                alert("isOn is currently true. Switching to false now.")
+                isOn = false
+            } else {
+                alert("isOn is currently false. Switching to true now.")
+                isOn = true
+            }
+        }
+
+        //loops and increment
+        // i++ is shorthand for i = i + 1
+        function countToN(n){
+            for (var i = 0; i < n; i+=2){
+                console.log(i)
+            }
+        }
+
+        var x = 2
+        
+        // x++
+        console.log(x++)
+    </script>
+    
+</head>
+<body>
+    <button onclick="sumVals(45,98)"> Call sumVals()</button>
+    <button onclick="switchOnOff()"> Call switchOnOff()</button>
+    <button onclick="countToN(10)"> Call countToN()</button>
+</body>
+</html>

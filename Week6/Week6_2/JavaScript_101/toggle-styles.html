@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            background-color: #006FFF;
+            color: white;
+            font-size: 69px;
+        }
+    </style>
+    <script>
+        function toggleActive(){
+            // grab the element to change
+            var element = document.getElementById("changeMe")
+            // check if the element already has the class applied
+            // if so, remove it 
+            if(element.classList.contains("active")){
+                element.classList.remove("active")
+                element.innerHTML = "I'm not active anymore"
+            } else {
+                element.classList.add("active")
+                element.innerHTML = "Woo Hoo! I'm now active"
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 id="changeMe" onclick="toggleActive()">
+        This is a header. Click me to change CSS and my html content!
+    </h1>
+</body>
+</html>
