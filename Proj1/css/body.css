@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+section {
+    margin-top: 20%;
+    margin-left: 20%;
+    width: 70%;
+    height: 500px;
+    /* padding: 10px; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.body-left{
+    margin-top: 12%;
+    padding: 0;
+    width: 50%;
+    height: 50%;
+
+    display: grid;
+    align-content: space-around;
+    justify-content: center;
+
+    color: white;
+    font-family: 'Gloock', serif;
+    font-size: 30px;
+
+}
+.body-left h3 span{
+    color:#e7450a
+}
+
+.body-left h4{
+    font-family: 'Pacifico', cursive;
+}
+
+.body-left button{
+
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.body-left button:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+section .body-right {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: auto;
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.body-right img{
+    object-fit: contain;
+}

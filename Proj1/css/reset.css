@@ -1,0 +1,10 @@
+/* take into account borders and padding into set dimensions of any div/article/box etc. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: black;
+}
