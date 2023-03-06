@@ -3,8 +3,9 @@ header{
     padding: 0 2% ;
     height: 100px;
 
-    display: grid;
-    justify-content: center;
+    /* display: grid; */
+    display: flex;
+    justify-content: space-between;
 
     /* background-color: white; */
     background: linear-gradient(to bottom, white 80%, rgba(0, 0, 0, 0.2) 100%)
