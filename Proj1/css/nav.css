@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-header{
+.nav-header{
     padding: 0 2% ;
     height: 100px;
 
@@ -11,12 +11,12 @@ header{
     background: linear-gradient(to bottom, white 80%, rgba(0, 0, 0, 0.2) 100%)
 }
 
-header div{
+.nav-header div{
     margin: 0;
     width: 150px;
 }
 
-header div img{
+.nav-header div img{
     /* object-fit: cover; */
     width: 150px;
     height: 100px;
