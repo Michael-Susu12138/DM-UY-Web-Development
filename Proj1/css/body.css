@@ -89,16 +89,17 @@ section .body-right {
 
 .body-bottom{
     width: 30%;
+    height: 30%;
+
     margin-top: -2%;
     margin-left: 20%;
-}
 
-.body-bottom div {
     display: flex;
 }
 
-.body-bottom div ul{
-    width: 70%;
+
+.body-bottom ul{
+    width: 100%;
 
     list-style-type: none;
     margin: 0;
@@ -108,7 +109,7 @@ section .body-right {
     display: flex;
 }
 
-.body-bottom div ul li {
+.body-bottom ul li {
     height: 60px;
     line-height: 60px;
     width: 120px;
@@ -120,7 +121,7 @@ section .body-right {
     /* background-color: white; */
 }
 
-.body-bottom div ul li a {
+.body-bottom ul li a {
     text-decoration: none;
     color: white
 }
