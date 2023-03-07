@@ -20,10 +20,24 @@
     
 }
 
+.content-resume {
+    width: 100%;
+    height: 100%;
+}
+
+.content-resume a {
+    height: 20vh;
+    width: 70%;
+    display: block;
+    color: black;
+    background-color: white;
+}
+
+
 .content-intro{
     margin: 0;
-
-    height: 20%;
+    width: 500px;
+    height: 500px;
 }
 
 
