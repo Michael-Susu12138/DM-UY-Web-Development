@@ -9,3 +9,13 @@ html{
     background-color: black;
     /* background-color: white; */
 }
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

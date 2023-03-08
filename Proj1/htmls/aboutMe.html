@@ -32,7 +32,16 @@
     <!-- content -->
     <section class="content">
 
+
         <section class="content-resume">
+            <div>
+                <button type="button" class="collapsible" onclick="enable_collapisble()">Open Collapsible</button>
+                <div class="collap-content">
+                    <p>Lorem ipsum...</p>
+                </div>
+            </div>
+            
+
             <a href="../resources/downloadable/Michael resume.pdf" download="Michael resume"> my Resume</a>
         </section>
 
@@ -94,11 +103,26 @@
                     <img src="" alt="">
                 </section>
             </article>
-        </section>
-
-
-        
+        </section>        
         
     </section>
+
+    <script>
+        function enable_collapisble(){
+            var collumn = document.getElementsByClassName("collapsible");
+            for( var i = 0; i < collumn.length; i++){
+                collumn[i].addEventListener("click", function(){
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block"){
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        }
+
+    </script>
 </body>
 </html>
