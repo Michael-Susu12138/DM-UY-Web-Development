@@ -18,14 +18,14 @@ section {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .body-left{
     margin-top: 12%;
     padding: 0;
-    width: 100%;
-    height: 100%;
-
+    width: 50%;
+    
     display: flex;
     flex-flow: column;
     align-content: space-around;
@@ -87,32 +87,22 @@ section {
 }
 
 
+
 .social-medias{
     width: 50%;
-    height: 100%;
-
-
-
-    display: flex;
-
-
-}
-
-
-.social-medias ul{
-    width: 100%;
 
     list-style-type: none;
-    margin: 0;
+    margin-top: 10px;
     padding: 0;
-    text-align: center;
-
+    /* text-align: center; */
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
-.social-medias ul li {
-    height: 60px;
-    line-height: 60px;
+.social-medias li {
+    /* height: 60px;
+    line-height: 60px; */
     width: 120px;
 
 
@@ -121,7 +111,7 @@ section {
 
 }
 
-.social-medias ul li a {
+.social-medias li a {
     text-decoration: none;
     color: white
 }
@@ -129,16 +119,20 @@ section {
 .body-right {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 500px;
+    position:relative;
+    overflow: hidden;
 
 }
 
 .body-right img{
-    object-fit: contain;
+    /* object-fit: contain; */
     display: block;
-    width: 100%;
+    width: auto;
     height: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 
