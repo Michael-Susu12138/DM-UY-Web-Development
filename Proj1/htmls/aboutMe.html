@@ -21,7 +21,7 @@
         </div>
                         
         <nav>
-            <ul>
+            <ul id="regular-nav">
                 <li><a href="../index.html"> Home</a></li>
                 <li><a href="#"> About Me</a></li> 
                 <li><a href="#">Skills</a></li>
@@ -38,7 +38,7 @@
         <section class="content-resume">
             <div class = "download-collap">
                 <a class="download-resume" href="../resources/downloadable/Michael resume.pdf" download="Michael resume"> Download Resume.pdf</a>
-                <div>
+                <div class="collaps">
                     <button type="button" class="collapsible"> Java Development Intern Google Shanghai <i class="fa-sharp fa-solid fa-plus fa-1.1x"></i> </button>
                     <div class="content-collap">
                         <ul>
@@ -370,6 +370,12 @@
             } else {
                 iframe_tag.style.display = "block";
                 button_game.innerHTML = "Quit Game";
+            }
+        }
+        function enable_hamburger(){
+            var window_width = window.innerWidth;
+            if(window_width <= 390){
+
             }
         }
         

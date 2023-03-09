@@ -5,7 +5,7 @@ body{
     /* position: relative; */
 }
 
-section {
+.content {
     margin-top: 7%;
     margin-left: 20%;
     margin-right: 10%;
@@ -129,12 +129,61 @@ section {
 .body-right img{
     /* object-fit: contain; */
     display: block;
-    width: auto;
-    height: 100%;
+    margin-bottom: 10vh;
+    width: 50vh;
+    height: auto;
     position: absolute;
     bottom: 0;
 }
 
+/* tablet size */
+@media only screen and (max-width: 820px) {
 
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .body-left{
+        height: 80%;
+        width: 80%;
+    }
+    .body-right {
+        width: 70%;
+    }
+    .body-right img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+/* mobile size */
+@media only screen and (max-width: 390px) {
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .body-left{
+        height: 80%;
+        width: 80%;
+
+        font-size: 2vh;
+    }
+
+    .social-medias {
+        width: 100%;
+    }
+
+    .body-right {
+        width: 100%;
+    }
+    .body-right img {
+        height: auto;
+        width: 100%;
+
+        margin-bottom: 25vh;
+    }
+
+}
 
 

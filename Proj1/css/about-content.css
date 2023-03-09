@@ -6,6 +6,7 @@
     height: 100%;
 
     margin: 5%;
+    /* margin-left:2%; */
     /* margin-top: 20%; */
     padding: 0;
     color: white;
@@ -16,7 +17,8 @@
 
 .content-resume {
     width: 120vh;
-    height: 55vh;
+    /* height: 55vh; */
+    height: auto;
 
     display: flex;
     flex-direction: row;
@@ -116,7 +118,6 @@
     /* padding: 3vh; */
     /* margin-left: 30vh; */
     padding-top: 2vh;
-    font-size: 1.5vh;
     
     display: block;
     background-color:#4A126F;
@@ -257,7 +258,10 @@
 }
 
 
-.mySlides {display: none}
+.mySlides {
+    display: none
+    
+}
 .mySlides img {
     margin-left: 5vh;
     vertical-align: middle;
@@ -267,10 +271,11 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px;
-  max-height: 500px;
-  position: relative;
-  margin: auto;
+    margin-left: 50vh;
+    max-width: 500px;
+    max-height: 500px;
+    position: relative;
+    margin: auto;
 }
 
 /* Next & previous buttons */
@@ -341,7 +346,7 @@
     width: 150vh;
     height: 80vh;
 
-    margin-top: -3vh;
+    margin-top: 30vh;
     padding: 4vh;
 
     display: flex;
@@ -351,6 +356,7 @@
     background-color: #353232; 
 
     font-size: 3vh;
+    border-radius: 20px;
 }
 
 .before-loss img {
@@ -364,5 +370,142 @@
 
 .after-loss{
     margin-top: 10vh;
+}
+.after-loss img {
+    max-width: 300px;
+}
 
+/* tablet size */
+@media only screen and (max-width: 820px) {
+
+    .download-collap {
+        margin-top: 3vh;
+    }
+    .content-resume {
+        width: 60vh;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .high-school {
+        width: 50vh;
+        font-size: 1.2vh;
+    }
+    .collaps{
+        display: flex;
+        flex-direction: column;
+    }
+    .education {
+        margin: 0;
+    }
+
+    .content-intro {
+        width: 120%;
+        flex-direction: column;
+    }
+    .intro{
+        margin: 0;
+        font-size: 2vh;
+    }
+    #play-game{
+        margin-top: 10vh;
+        margin-left: 20vh;
+    }
+
+    .slideshow-container {
+        /* margin: 0; */
+        margin-left: 26vh;
+        margin-top: 3vh;
+    }
+
+    .weight-loss {
+        width: 60vh;
+        height: auto;
+        
+        flex-direction: column;
+    }
+    
+    .before-loss {
+        margin-left: 10vh;
+    }
+    .arrow {
+        margin-top: 30vh;
+
+        transform: rotate(90deg);
+    }
+    .after-loss{
+        margin: 0;
+    }
+}
+
+/* mobile size */
+@media only screen and (max-width: 390px) {
+    .content-resume {
+        width: 40vh;
+    }
+    .download-resume {
+        margin-top: -2vh;
+    }
+    .collaps{
+        width: 30vh;
+    }
+    .collapsible{
+        width: 100%;
+        font-size: 1.2vh;
+    }
+    .content-collap {
+        width: 90%;
+    }
+    .high-school {
+        width: 30vh;
+        line-height: 2vh;
+        font-size: 1vh;
+    }
+    .hs-button{
+        padding-top: 0.5vh;
+    }
+    .hs-img-link{
+        margin: 0;
+    }
+    .college-img-link {
+        margin-top: 3vh;
+    }
+    .college-button {
+        margin: 0;
+    }
+    #play-game {
+        display: none;
+    }
+    .intro {
+        font-size: 1.5vh;
+    }
+    .slideshow-container{
+        margin-left: 20vh;
+        width: 40vh;
+    }
+
+    .slideshow img {
+        width: 1vh;
+        /* height: 10%; */
+    }
+    .weight-loss {
+        width: 40vh;
+        height: auto;
+        /* padding: 0; */
+        
+        flex-direction: column;
+    }
+    
+    .before-loss {
+        margin-left: 0vh;
+    }
+    .arrow {
+        margin-top: 30vh;
+
+        transform: rotate(90deg);
+    }
+    .after-loss{
+        margin: 0;
+    }
+    
 }
